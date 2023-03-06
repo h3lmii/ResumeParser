@@ -3,8 +3,9 @@ from PyPDF2 import PdfReader
 
 import pandas as pd
 import spacy
-nlp=spacy.load('en_core_web_sm')
-
+#nlp=spacy.load('en_core_web_sm')
+import en_core_web_sm
+nlp = en_core_web_sm.load()
 from spacy.matcher import Matcher
 matcher = Matcher(nlp.vocab)
 import pandas as pd
